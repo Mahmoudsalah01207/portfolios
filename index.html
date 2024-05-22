@@ -141,54 +141,54 @@
 
     <!-- testimonial_area  -->
 
-<section id="My_skill" >
-  
-    <div class="portfolio_area portfolio_bg_1 pt-5 pb-0  ">
+<section id="My_skill">
+    <div class="portfolio_area portfolio_bg_1 pt-5 pb-0">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section_title white_text text-center  ">
+                    <div class="section_title white_text text-center">
                         <h3 class="pb-4">my skills</h3>
                     </div>
                 </div>
             </div>
         </div>
-    
-
-      <div id="icon-container" class="pt-5 mt-5" >
-        <img class="icon " src="img/portfolio/html5-icon-2018x2048-st7q7lm6.png" alt="Icon 1">
-        <img class="icon" src="img/portfolio/CSS_icon.svg.png" alt="Icon 2">
-        <img class="icon" src="img/portfolio/js-logo.png" alt="Icon 3">
-        <img class="icon" src="img/portfolio/communityIcon_4g1uo0kd87c61 (1).png" alt="Icon 4">
-      </div>
+        <div id="icon-container" class="pt-5 mt-5 text-center">
+            <div class="icon-wrapper">
+                <img class="icon" src="img/portfolio/html5-icon-2018x2048-st7q7lm6.png" alt="Icon 1">
+                <img class="icon" src="img/portfolio/CSS_icon.svg.png" alt="Icon 2">
+                <img class="icon" src="img/portfolio/js-logo.png" alt="Icon 3">
+                <img class="icon" src="img/portfolio/communityIcon_4g1uo0kd87c61 (1).png" alt="Icon 4">
+            </div>
+        </div>
     </div>
 </section>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var icons = document.getElementsByClassName('icon');
-      var iconWidth = icons[0].offsetWidth; 
-      var displacement = 13; 
-  
-      function animateIcons() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var icons = document.getElementsByClassName('icon');
+    var displacement = 13;
+
+    function animateIcons() {
         for (var i = 0; i < icons.length; i++) {
-          (function(index) {
-            var delay = 800 * index; 
-            var right = (index > 0) ? ((0.3 * iconWidth) + displacement) * index : 0;
-  
-            setTimeout(function() {
-              icons[index].style.right = right + '9px';
-              icons[index].style.opacity = 1;
-            }, delay);
-          })(i);
+            (function(index) {
+                var delay = 800 * index;
+
+                setTimeout(function() {
+                    icons[index].style.transform = 'translateY(' + (displacement * index) + 'px)';
+                    icons[index].style.opacity = 1;
+                }, delay);
+            })(i);
         }
-      }
-  
-      function disableAnimation() {
+    }
+
+    function disableAnimation() {
         for (var i = 0; i < icons.length; i++) {
-          icons[i].style.transition = 'none';
+            icons[i].style.transition = 'none';
         }
-      }
-  
+    }
+
+    animateIcons();
+});
       function handleScroll() {
         var skillSection = document.getElementById('My_skill'); 
         var skillSectionRect = skillSection.getBoundingClientRect();
