@@ -163,10 +163,11 @@
     </div>
 </section>
 
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var icons = document.getElementsByClassName('icon');
-    var displacement = 13;
+    var displacement = 20; // Adjust displacement to match padding
 
     function animateIcons() {
         for (var i = 0; i < icons.length; i++) {
@@ -189,6 +190,7 @@
 
     animateIcons();
 });
+
       function handleScroll() {
         var skillSection = document.getElementById('My_skill'); 
         var skillSectionRect = skillSection.getBoundingClientRect();
