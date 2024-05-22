@@ -6800,13 +6800,13 @@ h6 {
 #icon-container img {
   width: 120px; /* Adjust the icon size as needed */
 }
-.icon {
+/*.icon {
   position: absolute;
   right: -100px; /* Move icons off-screen to the right */
   opacity: 0;
   transition: opacity 0.5s, right 0.5s;
   margin-right: 20px; /* Adjust the spacing between icons */
-}
+}*/
 
 @media screen and (max-width: 800px) {
   #icon-container img {
