@@ -6821,13 +6821,15 @@ h6 {
 
 @media screen and (max-width: 600px) {
   #icon-container {
-    justify-content: space-around;
+    justify-content: center; /* Center the icons horizontally */
   }
-
   #icon-container img {
-    width: 40px;
-    margin: 4px;
-  }
+    width: 50px; /* Reduce the icon size on smaller screens */
+    margin-left: 10px; /* Reduce the horizontal spacing between icons */
+    margin-bottom: 30px; /* Reduce the vertical spacing between icons */
+    display: inline-block; /* Display the icons as inline-block elements */
+    position: static; /* Keep the icons static on smaller screens */
+}
 }
 .portfolios_area:before {
   position: absolute;
