@@ -165,10 +165,11 @@
 
 
 
+
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var icons = document.getElementsByClassName('icon');
-    var displacement = 20; // Adjust displacement to match padding
+    var displacement = 20; // Adjust displacement to match margin
 
     function animateIcons() {
         for (var i = 0; i < icons.length; i++) {
@@ -183,14 +184,9 @@
         }
     }
 
-    function disableAnimation() {
-        for (var i = 0; i < icons.length; i++) {
-            icons[i].style.transition = 'none';
-        }
-    }
-
     animateIcons();
 });
+
 
 
       function handleScroll() {
