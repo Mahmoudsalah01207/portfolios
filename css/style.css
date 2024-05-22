@@ -6805,17 +6805,28 @@ h6 {
   margin-right: 20px; /* Adjust the spacing between icons */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+  #icon-container img {
+    width: 60px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #icon-container img {
+    width: 50px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   #icon-container {
-    justify-content: center; /* Center the icons horizontally */
+    justify-content: space-around;
   }
 
   #icon-container img {
-    width: 50px; /* Reduce the icon size on smaller screens */
-    margin-left: 30px; /* Reduce the horizontal spacing between icons */
-    margin-bottom: 10px; /* Reduce the vertical spacing between icons */
-    display: inline-block; /* Display the icons as inline-block elements */
-    position: static; /* Keep the icons static on smaller screens */
+    width: 40px;
+    margin: 4px;
   }
 }
 .portfolios_area:before {
