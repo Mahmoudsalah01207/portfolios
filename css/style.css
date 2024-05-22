@@ -989,9 +989,6 @@ h3 {
   -ms-flex-pack: flex-end;
 }
 
-
-
-
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 86, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
   .header-area .main-header-area .Appointment .search_button {
@@ -6800,13 +6797,13 @@ h6 {
 #icon-container img {
   width: 120px; /* Adjust the icon size as needed */
 }
-/*.icon {
+.icon {
   position: absolute;
   right: -100px; /* Move icons off-screen to the right */
   opacity: 0;
   transition: opacity 0.5s, right 0.5s;
   margin-right: 20px; /* Adjust the spacing between icons */
-}*/
+}
 
 @media screen and (max-width: 800px) {
   #icon-container img {
@@ -6843,10 +6840,3 @@ h6 {
       position: absolute;
       color: red;
     }
-.new{
-      display: flex;
-    align-items: center;
-
-    flex-direction: column;
-
-}
