@@ -1003,10 +1003,11 @@ h3 {
 
 .icon {
     width: 100px; /* Adjust size as needed */
-    margin: 10px 0;
+    padding: 20px 0; /* Adjust padding as needed */
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 86, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
