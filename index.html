@@ -200,20 +200,6 @@
           disableAnimation();
         }
       }
-
-
-
-      function handleScroll() {
-        var skillSection = document.getElementById('My_skill'); 
-        var skillSectionRect = skillSection.getBoundingClientRect();
-  
-       
-        if (skillSectionRect.top <= window.innerHeight - 10) {
-          animateIcons();
-        } else {
-          disableAnimation();
-        }
-      }
   
       handleScroll();
   
